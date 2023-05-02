@@ -1,0 +1,39 @@
+.slider {
+    width: fit-content;
+    position: absolute;
+    top: 470px;
+    right: 192px;
+}
+
+.slaider_img {
+    transition-duration: 0.5s;
+    width: 90%;
+
+}
+
+.icon_navigate {
+ color: rgba(118, 75, 162, 1) ;   
+ background-color: rgba(0, 128, 0, 0);
+}
+
+.slaider_img_active {
+    transform: rotate(60deg);
+    transform-origin: top right;
+}
+
+
+.navigation__button {
+    background-color:transparent;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+}
+
+.navigation__button:focus {
+    background-color:transparent;
+}
+
+.navigation__button .navigation__icon {
+    font-size: 100px;
+    color: rgba(118, 75, 162, 1);
+}

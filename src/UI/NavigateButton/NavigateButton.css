@@ -1,0 +1,21 @@
+.navigateButton {
+    width: 400px;
+    height: 80px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7a0bc0,#fa58b6);
+    cursor: pointer;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+
+    
+}
+
+.navigateButton:hover {
+    background: linear-gradient(90deg, #af2eff,#9056fb);    
+    box-shadow: 0px 6px #000000ab;    
+    transform: translateY(-7%);
+    transition-property: transform;
+    transition-duration: 0.5s;                
+}

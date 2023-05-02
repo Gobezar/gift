@@ -1,0 +1,11 @@
+.burger-btn {
+    margin-left: 20px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    cursor: pointer;
+}
+
+.burger-btn i {
+    font-size: 60px !important;
+}

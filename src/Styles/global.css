@@ -1,0 +1,7 @@
+html, body {
+    background-color: rgba(37, 36, 36, 1);
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}

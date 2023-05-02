@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+  flex-direction: column;
+
+}
+
+.mainPage__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+    flex: 1 1 auto;
+}
+
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    box-shadow: none;
+}
+
+.header__img, .footer__img {
+    width: 100%;
+}
+
+
+.mainPage__content h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    color: #FFE9F6;
+    margin-left: 100px;
+    margin-top: 0;
+
+}
+
+.mainPage__content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #FFE9F6;
+    margin: 50px 0px 0px 100px;
+}
+
+.goButton {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+
+
+.speedometer_img {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  
+.miniEllipse {
+    position: absolute;
+    top: 664px;
+    right: 828px;
+}
+
+.speedometer_1, .speedometer_2, .speedometer_3 {
+    width: 520px;
+    height: 520px;
+}
+
+.arrow {
+    position: absolute;
+    top: 663px;
+    right: 690px;
+}
+
+.arrowLevel_1 {
+    transform: rotate(0deg);
+    transform-origin: 20px 10px;
+    transition-duration: 0.5s;
+}
+
+.arrowLevel_2 {
+    transform: rotate(120deg);
+    transform-origin: 43px 20px;
+    transition-duration: 0.5s;
+
+}
+
+.arrowLevel_3 {
+    transform: rotate(240deg);
+    transform-origin: 47px 20px;
+    transition-duration: 0.5s;
+
+}
+
+
+
+.level__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level__buttons button {
+    width: 350px;
+    height: 60px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    background: #7b0bc000;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 10px 0px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.levelButton1:hover {
+    background-color: rgba(122, 11, 192, 1);
+}
+.levelButton2:hover {
+    background-color: rgba(11, 138, 192, 1);
+}
+.levelButton3:hover {
+    background-color: rgba(225, 5, 229, 1);
+}
+
+.levelButton1.active {
+    background-color: rgba(122, 11, 192, 1);
+}
+.levelButton2.active {
+    background-color: rgba(11, 138, 192, 1);
+}
+.levelButton3.active {
+    background-color: rgba(225, 5, 229, 1);
+}
