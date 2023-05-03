@@ -38,7 +38,7 @@ const ChoisePage = () => {
                     <div className='goButton'><Link to='/'> <NavigateButton children={'BACK'} /></Link></div>
                 </div>
             <div className='gift__content'>
-                <img src={sliderBackground} alt='sliderBackground'/>
+                <img className='slider__Background' src={sliderBackground} alt='sliderBackground'/>
                 <ImageSlider />
 
             </div>

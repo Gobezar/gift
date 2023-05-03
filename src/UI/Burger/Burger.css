@@ -4,8 +4,25 @@
     top: 150px;
     left: 100px;
     cursor: pointer;
+
+    @media (max-width: 1500px) {
+        left: 50px;
+    }
+
+    @media (max-width: 1000px) {
+        top: 100px;
+    }
+
+    @media (max-width: 800px) {
+        left: 20px;
+    }
+
 }
 
 .burger-btn i {
     font-size: 60px !important;
+
+    @media (max-width: 1500px) {
+        font-size: 40px !important;
+    }
 }

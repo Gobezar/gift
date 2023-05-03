@@ -24,7 +24,7 @@ const MainPage = () => {
   const [speedLevel, setSpeedLevel] = useState(1)
   const [arrowLevel, setArrowLevel] = useState(1)
 
-  function handleLevel (level) {
+  function handleLevel(level) {
     setSpeedLevel(level)
     setArrowLevel(level)
   }
@@ -46,7 +46,7 @@ const MainPage = () => {
       <MyMenu />
       <div className='mainPage__content'>
 
-        <div>
+        <div className='text__block'>
           <h2>Bibendum neque<br /> egestas congue</h2>
           <p>lacus sed viverra tellus in hac habitasse platea dictumst vestibulum <br />rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt<br /> lobortis feugiat</p>
           <div className='goButton'><Link to='/choisePage'> <NavigateButton children={'GO'} /></Link></div>
@@ -57,9 +57,9 @@ const MainPage = () => {
           {speedLevel === 2 && <img className='speedometer_img speedometer_2' src={Level2} />}
           {speedLevel === 3 && <img className='speedometer_img speedometer_3' src={Level3} />}
           <div>
-          <img className={`arrow ${speedLevel === 1 && 'arrowLevel_1'} ${speedLevel === 2 && 'arrowLevel_2'} ${speedLevel === 3 && 'arrowLevel_3'}`} src={Arrow}/>
+            <img className={`arrow ${speedLevel === 1 && 'arrowLevel_1'} ${speedLevel === 2 && 'arrowLevel_2'} ${speedLevel === 3 && 'arrowLevel_3'}`} src={Arrow} />
           </div>
-          <img className='miniEllipse' src={speedLevel === 1 && MiniEllipse || speedLevel === 2  && MiniEllipse2 || speedLevel === 3  && MiniEllipse3} />
+          <img className='miniEllipse' src={speedLevel === 1 && MiniEllipse || speedLevel === 2 && MiniEllipse2 || speedLevel === 3 && MiniEllipse3} />
         </div>
 
         <div className='level__buttons'>
